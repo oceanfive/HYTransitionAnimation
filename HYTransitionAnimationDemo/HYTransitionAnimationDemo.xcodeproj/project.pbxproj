@@ -13,6 +13,28 @@
 		8EB8F7B01F56967300804C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB8F7AE1F56967300804C7C /* Main.storyboard */; };
 		8EB8F7B21F56967300804C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB8F7B11F56967300804C7C /* Assets.xcassets */; };
 		8EB8F7B51F56967300804C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB8F7B31F56967300804C7C /* LaunchScreen.storyboard */; };
+		8EB8F7EC1F56B5A700804C7C /* HYFlipTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7C21F56B5A700804C7C /* HYFlipTransitionAnimation.m */; };
+		8EB8F7ED1F56B5A700804C7C /* HYLeftRightClosePortalTransitionAnimationDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7C51F56B5A700804C7C /* HYLeftRightClosePortalTransitionAnimationDirection.m */; };
+		8EB8F7EE1F56B5A700804C7C /* HYLeftRightOpenPortalTransitionAnimationDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7C71F56B5A700804C7C /* HYLeftRightOpenPortalTransitionAnimationDirection.m */; };
+		8EB8F7EF1F56B5A700804C7C /* HYPortalTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7C91F56B5A700804C7C /* HYPortalTransitionAnimation.m */; };
+		8EB8F7F01F56B5A700804C7C /* HYTopBottomClosePortalTransitionAnimationDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7CB1F56B5A700804C7C /* HYTopBottomClosePortalTransitionAnimationDirection.m */; };
+		8EB8F7F11F56B5A700804C7C /* HYTopBottomOpenPortalTransitionAnimationDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7CD1F56B5A700804C7C /* HYTopBottomOpenPortalTransitionAnimationDirection.m */; };
+		8EB8F7F21F56B5A700804C7C /* HYCameraIrisHollowCloseTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7D01F56B5A700804C7C /* HYCameraIrisHollowCloseTransitionAnimation.m */; };
+		8EB8F7F31F56B5A700804C7C /* HYCameraIrisHollowOpenTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7D21F56B5A700804C7C /* HYCameraIrisHollowOpenTransitionAnimation.m */; };
+		8EB8F7F41F56B5A700804C7C /* HYCubeTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7D41F56B5A700804C7C /* HYCubeTransitionAnimation.m */; };
+		8EB8F7F51F56B5A700804C7C /* HYFadeTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7D61F56B5A700804C7C /* HYFadeTransitionAnimation.m */; };
+		8EB8F7F61F56B5A700804C7C /* HYMoveInTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7D81F56B5A700804C7C /* HYMoveInTransitionAnimation.m */; };
+		8EB8F7F71F56B5A700804C7C /* HYOglFlipTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7DA1F56B5A700804C7C /* HYOglFlipTransitionAnimation.m */; };
+		8EB8F7F81F56B5A700804C7C /* HYPageCurlTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7DC1F56B5A700804C7C /* HYPageCurlTransitionAnimation.m */; };
+		8EB8F7F91F56B5A700804C7C /* HYPageUnCurlTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7DE1F56B5A700804C7C /* HYPageUnCurlTransitionAnimation.m */; };
+		8EB8F7FA1F56B5A700804C7C /* HYPushTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7E01F56B5A700804C7C /* HYPushTransitionAnimation.m */; };
+		8EB8F7FB1F56B5A700804C7C /* HYRevealTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7E21F56B5A700804C7C /* HYRevealTransitionAnimation.m */; };
+		8EB8F7FC1F56B5A700804C7C /* HYRippleEffectTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7E41F56B5A700804C7C /* HYRippleEffectTransitionAnimation.m */; };
+		8EB8F7FD1F56B5A700804C7C /* HYSuckEffectTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7E61F56B5A700804C7C /* HYSuckEffectTransitionAnimation.m */; };
+		8EB8F7FE1F56B5A700804C7C /* HYSystemTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7E81F56B5A700804C7C /* HYSystemTransitionAnimation.m */; };
+		8EB8F7FF1F56B5A700804C7C /* HYTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7EA1F56B5A700804C7C /* HYTransitionAnimation.m */; };
+		8EB8F8081F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F8071F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m */; };
+		8EB8F80B1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F80A1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +48,51 @@
 		8EB8F7B11F56967300804C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB8F7B41F56967300804C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EB8F7B61F56967300804C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EB8F7C11F56B5A700804C7C /* HYFlipTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYFlipTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7C21F56B5A700804C7C /* HYFlipTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYFlipTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7C41F56B5A700804C7C /* HYLeftRightClosePortalTransitionAnimationDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLeftRightClosePortalTransitionAnimationDirection.h; sourceTree = "<group>"; };
+		8EB8F7C51F56B5A700804C7C /* HYLeftRightClosePortalTransitionAnimationDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLeftRightClosePortalTransitionAnimationDirection.m; sourceTree = "<group>"; };
+		8EB8F7C61F56B5A700804C7C /* HYLeftRightOpenPortalTransitionAnimationDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLeftRightOpenPortalTransitionAnimationDirection.h; sourceTree = "<group>"; };
+		8EB8F7C71F56B5A700804C7C /* HYLeftRightOpenPortalTransitionAnimationDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLeftRightOpenPortalTransitionAnimationDirection.m; sourceTree = "<group>"; };
+		8EB8F7C81F56B5A700804C7C /* HYPortalTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPortalTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7C91F56B5A700804C7C /* HYPortalTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPortalTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7CA1F56B5A700804C7C /* HYTopBottomClosePortalTransitionAnimationDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopBottomClosePortalTransitionAnimationDirection.h; sourceTree = "<group>"; };
+		8EB8F7CB1F56B5A700804C7C /* HYTopBottomClosePortalTransitionAnimationDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopBottomClosePortalTransitionAnimationDirection.m; sourceTree = "<group>"; };
+		8EB8F7CC1F56B5A700804C7C /* HYTopBottomOpenPortalTransitionAnimationDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTopBottomOpenPortalTransitionAnimationDirection.h; sourceTree = "<group>"; };
+		8EB8F7CD1F56B5A700804C7C /* HYTopBottomOpenPortalTransitionAnimationDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTopBottomOpenPortalTransitionAnimationDirection.m; sourceTree = "<group>"; };
+		8EB8F7CF1F56B5A700804C7C /* HYCameraIrisHollowCloseTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCameraIrisHollowCloseTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7D01F56B5A700804C7C /* HYCameraIrisHollowCloseTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCameraIrisHollowCloseTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7D11F56B5A700804C7C /* HYCameraIrisHollowOpenTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCameraIrisHollowOpenTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7D21F56B5A700804C7C /* HYCameraIrisHollowOpenTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCameraIrisHollowOpenTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7D31F56B5A700804C7C /* HYCubeTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCubeTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7D41F56B5A700804C7C /* HYCubeTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCubeTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7D51F56B5A700804C7C /* HYFadeTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYFadeTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7D61F56B5A700804C7C /* HYFadeTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYFadeTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7D71F56B5A700804C7C /* HYMoveInTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYMoveInTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7D81F56B5A700804C7C /* HYMoveInTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYMoveInTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7D91F56B5A700804C7C /* HYOglFlipTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYOglFlipTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7DA1F56B5A700804C7C /* HYOglFlipTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYOglFlipTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7DB1F56B5A700804C7C /* HYPageCurlTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPageCurlTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7DC1F56B5A700804C7C /* HYPageCurlTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPageCurlTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7DD1F56B5A700804C7C /* HYPageUnCurlTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPageUnCurlTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7DE1F56B5A700804C7C /* HYPageUnCurlTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPageUnCurlTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7DF1F56B5A700804C7C /* HYPushTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPushTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7E01F56B5A700804C7C /* HYPushTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPushTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7E11F56B5A700804C7C /* HYRevealTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRevealTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7E21F56B5A700804C7C /* HYRevealTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRevealTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7E31F56B5A700804C7C /* HYRippleEffectTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRippleEffectTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7E41F56B5A700804C7C /* HYRippleEffectTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRippleEffectTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7E51F56B5A700804C7C /* HYSuckEffectTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSuckEffectTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7E61F56B5A700804C7C /* HYSuckEffectTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSuckEffectTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7E71F56B5A700804C7C /* HYSystemTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSystemTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7E81F56B5A700804C7C /* HYSystemTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSystemTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7E91F56B5A700804C7C /* HYTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTransitionAnimation.h; sourceTree = "<group>"; };
+		8EB8F7EA1F56B5A700804C7C /* HYTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTransitionAnimation.m; sourceTree = "<group>"; };
+		8EB8F7EB1F56B5A700804C7C /* HYTransitionAnimationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTransitionAnimationHeader.h; sourceTree = "<group>"; };
+		8EB8F8061F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HYTransitionAnimationCategory.h"; sourceTree = "<group>"; };
+		8EB8F8071F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HYTransitionAnimationCategory.m"; sourceTree = "<group>"; };
+		8EB8F8091F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HYTransitionAnimationCategory.h"; sourceTree = "<group>"; };
+		8EB8F80A1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HYTransitionAnimationCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +109,7 @@
 		8EB8F7991F56967300804C7C = {
 			isa = PBXGroup;
 			children = (
+				8EB8F7BF1F56B5A700804C7C /* HYTransitionAnimation */,
 				8EB8F7A41F56967300804C7C /* HYTransitionAnimationDemo */,
 				8EB8F7A31F56967300804C7C /* Products */,
 			);
@@ -77,6 +145,82 @@
 				8EB8F7A61F56967300804C7C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EB8F7BF1F56B5A700804C7C /* HYTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8EB8F7C01F56B5A700804C7C /* HYFlipTransitionAnimation */,
+				8EB8F7C31F56B5A700804C7C /* HYPortalTransitionAnimation */,
+				8EB8F7CE1F56B5A700804C7C /* HYSystemTransitionAnimation */,
+				8EB8F7E91F56B5A700804C7C /* HYTransitionAnimation.h */,
+				8EB8F7EA1F56B5A700804C7C /* HYTransitionAnimation.m */,
+				8EB8F7EB1F56B5A700804C7C /* HYTransitionAnimationHeader.h */,
+				8EB8F8061F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.h */,
+				8EB8F8071F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m */,
+				8EB8F8091F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.h */,
+				8EB8F80A1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m */,
+			);
+			path = HYTransitionAnimation;
+			sourceTree = "<group>";
+		};
+		8EB8F7C01F56B5A700804C7C /* HYFlipTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8EB8F7C11F56B5A700804C7C /* HYFlipTransitionAnimation.h */,
+				8EB8F7C21F56B5A700804C7C /* HYFlipTransitionAnimation.m */,
+			);
+			path = HYFlipTransitionAnimation;
+			sourceTree = "<group>";
+		};
+		8EB8F7C31F56B5A700804C7C /* HYPortalTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8EB8F7C41F56B5A700804C7C /* HYLeftRightClosePortalTransitionAnimationDirection.h */,
+				8EB8F7C51F56B5A700804C7C /* HYLeftRightClosePortalTransitionAnimationDirection.m */,
+				8EB8F7C61F56B5A700804C7C /* HYLeftRightOpenPortalTransitionAnimationDirection.h */,
+				8EB8F7C71F56B5A700804C7C /* HYLeftRightOpenPortalTransitionAnimationDirection.m */,
+				8EB8F7C81F56B5A700804C7C /* HYPortalTransitionAnimation.h */,
+				8EB8F7C91F56B5A700804C7C /* HYPortalTransitionAnimation.m */,
+				8EB8F7CA1F56B5A700804C7C /* HYTopBottomClosePortalTransitionAnimationDirection.h */,
+				8EB8F7CB1F56B5A700804C7C /* HYTopBottomClosePortalTransitionAnimationDirection.m */,
+				8EB8F7CC1F56B5A700804C7C /* HYTopBottomOpenPortalTransitionAnimationDirection.h */,
+				8EB8F7CD1F56B5A700804C7C /* HYTopBottomOpenPortalTransitionAnimationDirection.m */,
+			);
+			path = HYPortalTransitionAnimation;
+			sourceTree = "<group>";
+		};
+		8EB8F7CE1F56B5A700804C7C /* HYSystemTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8EB8F7CF1F56B5A700804C7C /* HYCameraIrisHollowCloseTransitionAnimation.h */,
+				8EB8F7D01F56B5A700804C7C /* HYCameraIrisHollowCloseTransitionAnimation.m */,
+				8EB8F7D11F56B5A700804C7C /* HYCameraIrisHollowOpenTransitionAnimation.h */,
+				8EB8F7D21F56B5A700804C7C /* HYCameraIrisHollowOpenTransitionAnimation.m */,
+				8EB8F7D31F56B5A700804C7C /* HYCubeTransitionAnimation.h */,
+				8EB8F7D41F56B5A700804C7C /* HYCubeTransitionAnimation.m */,
+				8EB8F7D51F56B5A700804C7C /* HYFadeTransitionAnimation.h */,
+				8EB8F7D61F56B5A700804C7C /* HYFadeTransitionAnimation.m */,
+				8EB8F7D71F56B5A700804C7C /* HYMoveInTransitionAnimation.h */,
+				8EB8F7D81F56B5A700804C7C /* HYMoveInTransitionAnimation.m */,
+				8EB8F7D91F56B5A700804C7C /* HYOglFlipTransitionAnimation.h */,
+				8EB8F7DA1F56B5A700804C7C /* HYOglFlipTransitionAnimation.m */,
+				8EB8F7DB1F56B5A700804C7C /* HYPageCurlTransitionAnimation.h */,
+				8EB8F7DC1F56B5A700804C7C /* HYPageCurlTransitionAnimation.m */,
+				8EB8F7DD1F56B5A700804C7C /* HYPageUnCurlTransitionAnimation.h */,
+				8EB8F7DE1F56B5A700804C7C /* HYPageUnCurlTransitionAnimation.m */,
+				8EB8F7DF1F56B5A700804C7C /* HYPushTransitionAnimation.h */,
+				8EB8F7E01F56B5A700804C7C /* HYPushTransitionAnimation.m */,
+				8EB8F7E11F56B5A700804C7C /* HYRevealTransitionAnimation.h */,
+				8EB8F7E21F56B5A700804C7C /* HYRevealTransitionAnimation.m */,
+				8EB8F7E31F56B5A700804C7C /* HYRippleEffectTransitionAnimation.h */,
+				8EB8F7E41F56B5A700804C7C /* HYRippleEffectTransitionAnimation.m */,
+				8EB8F7E51F56B5A700804C7C /* HYSuckEffectTransitionAnimation.h */,
+				8EB8F7E61F56B5A700804C7C /* HYSuckEffectTransitionAnimation.m */,
+				8EB8F7E71F56B5A700804C7C /* HYSystemTransitionAnimation.h */,
+				8EB8F7E81F56B5A700804C7C /* HYSystemTransitionAnimation.m */,
+			);
+			path = HYSystemTransitionAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +294,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB8F7F51F56B5A700804C7C /* HYFadeTransitionAnimation.m in Sources */,
+				8EB8F80B1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m in Sources */,
+				8EB8F7EE1F56B5A700804C7C /* HYLeftRightOpenPortalTransitionAnimationDirection.m in Sources */,
+				8EB8F8081F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m in Sources */,
+				8EB8F7F61F56B5A700804C7C /* HYMoveInTransitionAnimation.m in Sources */,
+				8EB8F7FC1F56B5A700804C7C /* HYRippleEffectTransitionAnimation.m in Sources */,
+				8EB8F7F71F56B5A700804C7C /* HYOglFlipTransitionAnimation.m in Sources */,
+				8EB8F7FE1F56B5A700804C7C /* HYSystemTransitionAnimation.m in Sources */,
+				8EB8F7F91F56B5A700804C7C /* HYPageUnCurlTransitionAnimation.m in Sources */,
+				8EB8F7FF1F56B5A700804C7C /* HYTransitionAnimation.m in Sources */,
 				8EB8F7AD1F56967300804C7C /* ViewController.m in Sources */,
+				8EB8F7ED1F56B5A700804C7C /* HYLeftRightClosePortalTransitionAnimationDirection.m in Sources */,
+				8EB8F7EC1F56B5A700804C7C /* HYFlipTransitionAnimation.m in Sources */,
+				8EB8F7F01F56B5A700804C7C /* HYTopBottomClosePortalTransitionAnimationDirection.m in Sources */,
+				8EB8F7F41F56B5A700804C7C /* HYCubeTransitionAnimation.m in Sources */,
+				8EB8F7FD1F56B5A700804C7C /* HYSuckEffectTransitionAnimation.m in Sources */,
+				8EB8F7FB1F56B5A700804C7C /* HYRevealTransitionAnimation.m in Sources */,
+				8EB8F7F81F56B5A700804C7C /* HYPageCurlTransitionAnimation.m in Sources */,
 				8EB8F7AA1F56967300804C7C /* AppDelegate.m in Sources */,
+				8EB8F7F31F56B5A700804C7C /* HYCameraIrisHollowOpenTransitionAnimation.m in Sources */,
+				8EB8F7F11F56B5A700804C7C /* HYTopBottomOpenPortalTransitionAnimationDirection.m in Sources */,
 				8EB8F7A71F56967300804C7C /* main.m in Sources */,
+				8EB8F7F21F56B5A700804C7C /* HYCameraIrisHollowCloseTransitionAnimation.m in Sources */,
+				8EB8F7FA1F56B5A700804C7C /* HYPushTransitionAnimation.m in Sources */,
+				8EB8F7EF1F56B5A700804C7C /* HYPortalTransitionAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +477,7 @@
 				8EB8F7BB1F56967300804C7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
