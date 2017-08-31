@@ -7,14 +7,16 @@
 //
 
 #import "PushViewController.h"
-
 #import "HYTransitionAnimationHeader.h"
 #import "PopViewController.h"
+#import "AnimationListViewController.h"
 
 #define kPushButtonTag 200
 #define kPresentButtonTag 205
 
 @interface PushViewController ()<UINavigationControllerDelegate>
+
+@property (nonatomic, strong) HYTransitionAnimation *animation;
 
 @end
 
@@ -42,7 +44,6 @@
     myButton.frame = CGRectMake(50, 100, 100, 80);
  
     
-    
     UIButton *myButton2 = [UIButton buttonWithType:UIButtonTypeCustom];
     myButton2.backgroundColor = [UIColor redColor];
     [myButton2 setTitle:@"present" forState:UIControlStateNormal];
@@ -53,25 +54,38 @@
     myButton2.tag = kPresentButtonTag;
     myButton2.frame = CGRectMake(50, 300, 100, 80);
     
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(chooseAnimation)];
+    self.navigationItem.rightBarButtonItem = item;
+    
 }
 
 - (void)myButtonClick:(UIButton *)button{
     
+    PopViewController *vc = [[PopViewController alloc] init];
+    
+    HYLeftRightOpenPortalTransitionAnimationDirection *anim = [[HYLeftRightOpenPortalTransitionAnimationDirection alloc] init];
+
+    self.animation = anim;
+    
     if (button.tag == kPushButtonTag) {
         
-        PopViewController *vc = [[PopViewController alloc] init];
-        
-        HYCubeTransitionAnimation *anim = [[HYCubeTransitionAnimation alloc] init];
-        [self.navigationController hy_pushViewController:vc animation:anim];
+        [self.navigationController hy_pushViewController:vc animation:self.animation];
         
     } else {
         
-        
+        [self hy_presentViewController:vc animation:self.animation];
+
     }
     
 
-    
     //    NSLayoutAttribute
+}
+
+#pragma mark - 选择动画类型
+- (void)chooseAnimation{
+    AnimationListViewController *vc = [[AnimationListViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

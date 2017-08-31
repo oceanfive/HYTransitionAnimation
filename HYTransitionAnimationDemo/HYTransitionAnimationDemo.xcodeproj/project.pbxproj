@@ -37,6 +37,7 @@
 		8EB8F80B1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F80A1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m */; };
 		8EB8F80E1F57978000804C7C /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F80D1F57978000804C7C /* PushViewController.m */; };
 		8EB8F8111F57993B00804C7C /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F8101F57993B00804C7C /* PopViewController.m */; };
+		8EB8F8141F57B03200804C7C /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F8131F57B03200804C7C /* AnimationListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,8 @@
 		8EB8F80D1F57978000804C7C /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
 		8EB8F80F1F57993B00804C7C /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
 		8EB8F8101F57993B00804C7C /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		8EB8F8121F57B03200804C7C /* AnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationListViewController.h; sourceTree = "<group>"; };
+		8EB8F8131F57B03200804C7C /* AnimationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				8EB8F80D1F57978000804C7C /* PushViewController.m */,
 				8EB8F80F1F57993B00804C7C /* PopViewController.h */,
 				8EB8F8101F57993B00804C7C /* PopViewController.m */,
+				8EB8F8121F57B03200804C7C /* AnimationListViewController.h */,
+				8EB8F8131F57B03200804C7C /* AnimationListViewController.m */,
 				8EB8F7AE1F56967300804C7C /* Main.storyboard */,
 				8EB8F7B11F56967300804C7C /* Assets.xcassets */,
 				8EB8F7B31F56967300804C7C /* LaunchScreen.storyboard */,
@@ -331,6 +336,7 @@
 				8EB8F7F21F56B5A700804C7C /* HYCameraIrisHollowCloseTransitionAnimation.m in Sources */,
 				8EB8F7FA1F56B5A700804C7C /* HYPushTransitionAnimation.m in Sources */,
 				8EB8F7EF1F56B5A700804C7C /* HYPortalTransitionAnimation.m in Sources */,
+				8EB8F8141F57B03200804C7C /* AnimationListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

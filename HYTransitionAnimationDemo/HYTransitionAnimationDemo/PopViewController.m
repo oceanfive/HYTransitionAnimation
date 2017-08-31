@@ -50,14 +50,16 @@
 
 - (void)myButtonClick:(UIButton *)button{
     
+    HYTopBottomClosePortalTransitionAnimationDirection *anim = [[HYTopBottomClosePortalTransitionAnimationDirection alloc] init];
+    
     if (button.tag == kPopButtonTag) {
         
-        HYTopBottomClosePortalTransitionAnimationDirection *anim = [[HYTopBottomClosePortalTransitionAnimationDirection alloc] init];
         [self.navigationController hy_popViewControllerAnimation:anim];
         
     } else {
         
-        
+        [self hy_dismissViewControllerAnimation:anim];
+//        [self dismissViewControllerAnimated:YES completion:nil];
     }
     
     
