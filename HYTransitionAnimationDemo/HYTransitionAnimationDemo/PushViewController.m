@@ -16,8 +16,6 @@
 
 @interface PushViewController ()<UINavigationControllerDelegate>
 
-@property (nonatomic, strong) HYTransitionAnimation *animation;
-
 @end
 
 @implementation PushViewController
@@ -64,10 +62,6 @@
     
     PopViewController *vc = [[PopViewController alloc] init];
     
-    HYLeftRightOpenPortalTransitionAnimationDirection *anim = [[HYLeftRightOpenPortalTransitionAnimationDirection alloc] init];
-
-    self.animation = anim;
-    
     if (button.tag == kPushButtonTag) {
         
         [self.navigationController hy_pushViewController:vc animation:self.animation];
@@ -87,7 +81,6 @@
     AnimationListViewController *vc = [[AnimationListViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
 
 
 - (void)didReceiveMemoryWarning {

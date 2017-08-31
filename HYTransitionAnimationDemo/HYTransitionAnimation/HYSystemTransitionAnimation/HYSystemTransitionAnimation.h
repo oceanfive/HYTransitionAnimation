@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, HYTransitionAnimationType) {
-    HYTransitionAnimationTypeFade = 1,  //淡出效果
+    HYTransitionAnimationTypeFade = 0,  //淡出效果
     HYTransitionAnimationTypeMoveIn,    //新视图移动到旧视图上
     HYTransitionAnimationTypePush,      //新视图推出旧视图
     HYTransitionAnimationTypeReveal,    //移开旧视图显示新视图
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSUInteger, HYTransitionAnimationType) {
 };
 
 typedef NS_ENUM(NSUInteger, HYTransitionAnimationDirection) {
-    HYTransitionAnimationDirectionFromLeft = 1,
+    HYTransitionAnimationDirectionFromLeft = 0,
     HYTransitionAnimationDirectionFromRight,
     HYTransitionAnimationDirectionFromTop,
     HYTransitionAnimationDirectionFromBottom,

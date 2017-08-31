@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class HYTransitionAnimation;
+
 @interface PushViewController : UIViewController
+
+@property (nonatomic, strong) HYTransitionAnimation *animation;
 
 @end
