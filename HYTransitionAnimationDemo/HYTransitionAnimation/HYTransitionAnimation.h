@@ -11,6 +11,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*
+ @discussion
+ 这个类是转场动画的基类，自定义转场动画需要继承这个类，并在子类中实现方法 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext; 在这个方法中执行具体的动画操作；动画完成完成后执行方法completeTransition:即可
+ 
+ */
+
 @interface HYTransitionAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
 /**

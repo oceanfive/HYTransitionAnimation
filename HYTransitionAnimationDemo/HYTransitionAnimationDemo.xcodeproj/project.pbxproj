@@ -35,6 +35,8 @@
 		8EB8F7FF1F56B5A700804C7C /* HYTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7EA1F56B5A700804C7C /* HYTransitionAnimation.m */; };
 		8EB8F8081F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F8071F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m */; };
 		8EB8F80B1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F80A1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m */; };
+		8EB8F80E1F57978000804C7C /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F80D1F57978000804C7C /* PushViewController.m */; };
+		8EB8F8111F57993B00804C7C /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F8101F57993B00804C7C /* PopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +95,10 @@
 		8EB8F8071F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HYTransitionAnimationCategory.m"; sourceTree = "<group>"; };
 		8EB8F8091F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HYTransitionAnimationCategory.h"; sourceTree = "<group>"; };
 		8EB8F80A1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HYTransitionAnimationCategory.m"; sourceTree = "<group>"; };
+		8EB8F80C1F57978000804C7C /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		8EB8F80D1F57978000804C7C /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		8EB8F80F1F57993B00804C7C /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		8EB8F8101F57993B00804C7C /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,10 @@
 				8EB8F7A91F56967300804C7C /* AppDelegate.m */,
 				8EB8F7AB1F56967300804C7C /* ViewController.h */,
 				8EB8F7AC1F56967300804C7C /* ViewController.m */,
+				8EB8F80C1F57978000804C7C /* PushViewController.h */,
+				8EB8F80D1F57978000804C7C /* PushViewController.m */,
+				8EB8F80F1F57993B00804C7C /* PopViewController.h */,
+				8EB8F8101F57993B00804C7C /* PopViewController.m */,
 				8EB8F7AE1F56967300804C7C /* Main.storyboard */,
 				8EB8F7B11F56967300804C7C /* Assets.xcassets */,
 				8EB8F7B31F56967300804C7C /* LaunchScreen.storyboard */,
@@ -306,6 +316,7 @@
 				8EB8F7FF1F56B5A700804C7C /* HYTransitionAnimation.m in Sources */,
 				8EB8F7AD1F56967300804C7C /* ViewController.m in Sources */,
 				8EB8F7ED1F56B5A700804C7C /* HYLeftRightClosePortalTransitionAnimationDirection.m in Sources */,
+				8EB8F8111F57993B00804C7C /* PopViewController.m in Sources */,
 				8EB8F7EC1F56B5A700804C7C /* HYFlipTransitionAnimation.m in Sources */,
 				8EB8F7F01F56B5A700804C7C /* HYTopBottomClosePortalTransitionAnimationDirection.m in Sources */,
 				8EB8F7F41F56B5A700804C7C /* HYCubeTransitionAnimation.m in Sources */,
@@ -314,6 +325,7 @@
 				8EB8F7F81F56B5A700804C7C /* HYPageCurlTransitionAnimation.m in Sources */,
 				8EB8F7AA1F56967300804C7C /* AppDelegate.m in Sources */,
 				8EB8F7F31F56B5A700804C7C /* HYCameraIrisHollowOpenTransitionAnimation.m in Sources */,
+				8EB8F80E1F57978000804C7C /* PushViewController.m in Sources */,
 				8EB8F7F11F56B5A700804C7C /* HYTopBottomOpenPortalTransitionAnimationDirection.m in Sources */,
 				8EB8F7A71F56967300804C7C /* main.m in Sources */,
 				8EB8F7F21F56B5A700804C7C /* HYCameraIrisHollowCloseTransitionAnimation.m in Sources */,

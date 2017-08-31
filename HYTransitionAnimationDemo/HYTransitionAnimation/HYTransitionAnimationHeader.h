@@ -9,6 +9,11 @@
 #ifndef HYTransitionAnimationHeader_h
 #define HYTransitionAnimationHeader_h
 
+//base
+#import "UIViewController+HYTransitionAnimationCategory.h"
+#import "UINavigationController+HYTransitionAnimationCategory.h"
+
+//TransitionAnimation
 #import "HYTransitionAnimation.h"
 
 //HYSystemTransitionAnimation
