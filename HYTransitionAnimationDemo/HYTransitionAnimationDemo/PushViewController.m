@@ -62,6 +62,12 @@
     
     PopViewController *vc = [[PopViewController alloc] init];
     
+    HYFlipTransitionAnimation *anim = [[HYFlipTransitionAnimation alloc] init];
+    anim.operation = HYFlipTransitionAnimationOperationForward;
+    anim.position = HYFlipTransitionAnimationPositonRight;
+    
+    self.animation = anim;
+    
     if (button.tag == kPushButtonTag) {
         
         [self.navigationController hy_pushViewController:vc animation:self.animation];

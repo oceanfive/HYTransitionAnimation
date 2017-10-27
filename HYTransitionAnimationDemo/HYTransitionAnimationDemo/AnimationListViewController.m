@@ -46,7 +46,7 @@
             [dict setObject:@"系统" forKey:kTitle];
             
             NSMutableArray *list = [NSMutableArray array];
-            [list addObject:@"HYTransitionAnimationTypeFadeg(present 不可用)"];
+            [list addObject:@"HYTransitionAnimationTypeFade(present 不可用)"];
             [list addObject:@"HYTransitionAnimationTypeMoveIn(present 不可用)"];
             [list addObject:@"HYTransitionAnimationTypePush(present 不可用)"];
             [list addObject:@"HYTransitionAnimationTypeReveal(present 不可用)"];

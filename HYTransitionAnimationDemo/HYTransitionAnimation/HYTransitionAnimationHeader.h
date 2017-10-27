@@ -16,7 +16,7 @@
 //TransitionAnimation
 #import "HYTransitionAnimation.h"
 
-//HYSystemTransitionAnimation
+//HYSystemTransitionAnimation - present/dismiss无效
 #import "HYSystemTransitionAnimation.h"
 #import "HYCameraIrisHollowCloseTransitionAnimation.h"
 #import "HYCameraIrisHollowOpenTransitionAnimation.h"
