@@ -10,8 +10,8 @@
 #define HYTransitionAnimationHeader_h
 
 // base
-#import "UIViewController+HYTransitionAnimation.m"
-#import "UINavigationController+HYTransitionAnimation.m"
+#import "UIViewController+HYTransitionAnimation.h"
+#import "UINavigationController+HYTransitionAnimation.h"
 
 // TransitionAnimation
 #import "HYTransitionAnimation.h"
@@ -31,14 +31,14 @@
 #import "HYRippleEffectTransitionAnimation.h"
 #import "HYSuckEffectTransitionAnimation.h"
 
-//HYPortalTransitionAnimation
+// HYPortalTransitionAnimation
 #import "HYPortalTransitionAnimation.h"
 #import "HYLeftRightClosePortalTransitionAnimationDirection.h"
 #import "HYLeftRightOpenPortalTransitionAnimationDirection.h"
 #import "HYTopBottomClosePortalTransitionAnimationDirection.h"
 #import "HYTopBottomOpenPortalTransitionAnimationDirection.h"
 
-//HYFlipTransitionAnimation
+// HYFlipTransitionAnimation
 #import "HYFlipTransitionAnimation.h"
 
 #endif /* HYTransitionAnimationHeader_h */
