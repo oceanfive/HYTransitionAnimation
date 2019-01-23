@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HYTransitionAnimation"
-  s.version      = "0.2.5"
+  s.version      = "0.2.6"
   s.summary      = "HYTransitionAnimation"
 
   # This description is used to generateg tags and improve search results.
