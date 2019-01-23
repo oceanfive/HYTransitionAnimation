@@ -113,6 +113,7 @@
     NSDictionary *dict = self.data[indexPath.section];
     NSArray *list = [dict objectForKey:kList];
     cell.textLabel.text = list[indexPath.row];
+    cell.textLabel.adjustsFontSizeToFitWidth = YES;
     return cell;
 }
 

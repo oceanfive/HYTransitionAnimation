@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E397AD221F801F600E8CF62 /* HYSystemTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E397AD021F801F600E8CF62 /* HYSystemTransitionAnimation.m */; };
+		8E397AD521F8021D00E8CF62 /* HYTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E397AD421F8021D00E8CF62 /* HYTransitionAnimation.m */; };
+		8E397AD821F8023E00E8CF62 /* UIViewController+HYTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E397AD721F8023D00E8CF62 /* UIViewController+HYTransitionAnimation.m */; };
+		8E397ADB21F8078900E8CF62 /* UINavigationController+HYTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E397ADA21F8078900E8CF62 /* UINavigationController+HYTransitionAnimation.m */; };
 		8EB8F7A71F56967300804C7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7A61F56967300804C7C /* main.m */; };
 		8EB8F7AA1F56967300804C7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7A91F56967300804C7C /* AppDelegate.m */; };
 		8EB8F7AD1F56967300804C7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7AC1F56967300804C7C /* ViewController.m */; };
@@ -31,16 +35,20 @@
 		8EB8F7FB1F56B5A700804C7C /* HYRevealTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7E21F56B5A700804C7C /* HYRevealTransitionAnimation.m */; };
 		8EB8F7FC1F56B5A700804C7C /* HYRippleEffectTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7E41F56B5A700804C7C /* HYRippleEffectTransitionAnimation.m */; };
 		8EB8F7FD1F56B5A700804C7C /* HYSuckEffectTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7E61F56B5A700804C7C /* HYSuckEffectTransitionAnimation.m */; };
-		8EB8F7FE1F56B5A700804C7C /* HYSystemTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7E81F56B5A700804C7C /* HYSystemTransitionAnimation.m */; };
-		8EB8F7FF1F56B5A700804C7C /* HYTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F7EA1F56B5A700804C7C /* HYTransitionAnimation.m */; };
-		8EB8F8081F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F8071F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m */; };
-		8EB8F80B1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F80A1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m */; };
 		8EB8F80E1F57978000804C7C /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F80D1F57978000804C7C /* PushViewController.m */; };
 		8EB8F8111F57993B00804C7C /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F8101F57993B00804C7C /* PopViewController.m */; };
 		8EB8F8141F57B03200804C7C /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB8F8131F57B03200804C7C /* AnimationListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E397AD021F801F600E8CF62 /* HYSystemTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSystemTransitionAnimation.m; sourceTree = "<group>"; };
+		8E397AD121F801F600E8CF62 /* HYSystemTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSystemTransitionAnimation.h; sourceTree = "<group>"; };
+		8E397AD321F8021D00E8CF62 /* HYTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTransitionAnimation.h; sourceTree = "<group>"; };
+		8E397AD421F8021D00E8CF62 /* HYTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTransitionAnimation.m; sourceTree = "<group>"; };
+		8E397AD621F8023D00E8CF62 /* UIViewController+HYTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HYTransitionAnimation.h"; sourceTree = "<group>"; };
+		8E397AD721F8023D00E8CF62 /* UIViewController+HYTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HYTransitionAnimation.m"; sourceTree = "<group>"; };
+		8E397AD921F8078900E8CF62 /* UINavigationController+HYTransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HYTransitionAnimation.h"; sourceTree = "<group>"; };
+		8E397ADA21F8078900E8CF62 /* UINavigationController+HYTransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HYTransitionAnimation.m"; sourceTree = "<group>"; };
 		8EB8F7A21F56967300804C7C /* HYTransitionAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYTransitionAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB8F7A61F56967300804C7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EB8F7A81F56967300804C7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,15 +95,7 @@
 		8EB8F7E41F56B5A700804C7C /* HYRippleEffectTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRippleEffectTransitionAnimation.m; sourceTree = "<group>"; };
 		8EB8F7E51F56B5A700804C7C /* HYSuckEffectTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSuckEffectTransitionAnimation.h; sourceTree = "<group>"; };
 		8EB8F7E61F56B5A700804C7C /* HYSuckEffectTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSuckEffectTransitionAnimation.m; sourceTree = "<group>"; };
-		8EB8F7E71F56B5A700804C7C /* HYSystemTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSystemTransitionAnimation.h; sourceTree = "<group>"; };
-		8EB8F7E81F56B5A700804C7C /* HYSystemTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSystemTransitionAnimation.m; sourceTree = "<group>"; };
-		8EB8F7E91F56B5A700804C7C /* HYTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTransitionAnimation.h; sourceTree = "<group>"; };
-		8EB8F7EA1F56B5A700804C7C /* HYTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTransitionAnimation.m; sourceTree = "<group>"; };
 		8EB8F7EB1F56B5A700804C7C /* HYTransitionAnimationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTransitionAnimationHeader.h; sourceTree = "<group>"; };
-		8EB8F8061F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HYTransitionAnimationCategory.h"; sourceTree = "<group>"; };
-		8EB8F8071F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HYTransitionAnimationCategory.m"; sourceTree = "<group>"; };
-		8EB8F8091F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HYTransitionAnimationCategory.h"; sourceTree = "<group>"; };
-		8EB8F80A1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HYTransitionAnimationCategory.m"; sourceTree = "<group>"; };
 		8EB8F80C1F57978000804C7C /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
 		8EB8F80D1F57978000804C7C /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
 		8EB8F80F1F57993B00804C7C /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
@@ -168,13 +168,13 @@
 				8EB8F7C01F56B5A700804C7C /* HYFlipTransitionAnimation */,
 				8EB8F7C31F56B5A700804C7C /* HYPortalTransitionAnimation */,
 				8EB8F7CE1F56B5A700804C7C /* HYSystemTransitionAnimation */,
-				8EB8F7E91F56B5A700804C7C /* HYTransitionAnimation.h */,
-				8EB8F7EA1F56B5A700804C7C /* HYTransitionAnimation.m */,
 				8EB8F7EB1F56B5A700804C7C /* HYTransitionAnimationHeader.h */,
-				8EB8F8061F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.h */,
-				8EB8F8071F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m */,
-				8EB8F8091F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.h */,
-				8EB8F80A1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m */,
+				8E397AD621F8023D00E8CF62 /* UIViewController+HYTransitionAnimation.h */,
+				8E397AD721F8023D00E8CF62 /* UIViewController+HYTransitionAnimation.m */,
+				8E397AD921F8078900E8CF62 /* UINavigationController+HYTransitionAnimation.h */,
+				8E397ADA21F8078900E8CF62 /* UINavigationController+HYTransitionAnimation.m */,
+				8E397AD321F8021D00E8CF62 /* HYTransitionAnimation.h */,
+				8E397AD421F8021D00E8CF62 /* HYTransitionAnimation.m */,
 			);
 			path = HYTransitionAnimation;
 			sourceTree = "<group>";
@@ -232,8 +232,8 @@
 				8EB8F7E41F56B5A700804C7C /* HYRippleEffectTransitionAnimation.m */,
 				8EB8F7E51F56B5A700804C7C /* HYSuckEffectTransitionAnimation.h */,
 				8EB8F7E61F56B5A700804C7C /* HYSuckEffectTransitionAnimation.m */,
-				8EB8F7E71F56B5A700804C7C /* HYSystemTransitionAnimation.h */,
-				8EB8F7E81F56B5A700804C7C /* HYSystemTransitionAnimation.m */,
+				8E397AD121F801F600E8CF62 /* HYSystemTransitionAnimation.h */,
+				8E397AD021F801F600E8CF62 /* HYSystemTransitionAnimation.m */,
 			);
 			path = HYSystemTransitionAnimation;
 			sourceTree = "<group>";
@@ -269,6 +269,7 @@
 				TargetAttributes = {
 					8EB8F7A11F56967300804C7C = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = D94N38GZR8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -310,17 +311,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EB8F7F51F56B5A700804C7C /* HYFadeTransitionAnimation.m in Sources */,
-				8EB8F80B1F56B87D00804C7C /* UINavigationController+HYTransitionAnimationCategory.m in Sources */,
 				8EB8F7EE1F56B5A700804C7C /* HYLeftRightOpenPortalTransitionAnimationDirection.m in Sources */,
-				8EB8F8081F56B86B00804C7C /* UIViewController+HYTransitionAnimationCategory.m in Sources */,
 				8EB8F7F61F56B5A700804C7C /* HYMoveInTransitionAnimation.m in Sources */,
 				8EB8F7FC1F56B5A700804C7C /* HYRippleEffectTransitionAnimation.m in Sources */,
+				8E397ADB21F8078900E8CF62 /* UINavigationController+HYTransitionAnimation.m in Sources */,
 				8EB8F7F71F56B5A700804C7C /* HYOglFlipTransitionAnimation.m in Sources */,
-				8EB8F7FE1F56B5A700804C7C /* HYSystemTransitionAnimation.m in Sources */,
 				8EB8F7F91F56B5A700804C7C /* HYPageUnCurlTransitionAnimation.m in Sources */,
-				8EB8F7FF1F56B5A700804C7C /* HYTransitionAnimation.m in Sources */,
 				8EB8F7AD1F56967300804C7C /* ViewController.m in Sources */,
 				8EB8F7ED1F56B5A700804C7C /* HYLeftRightClosePortalTransitionAnimationDirection.m in Sources */,
+				8E397AD521F8021D00E8CF62 /* HYTransitionAnimation.m in Sources */,
 				8EB8F8111F57993B00804C7C /* PopViewController.m in Sources */,
 				8EB8F7EC1F56B5A700804C7C /* HYFlipTransitionAnimation.m in Sources */,
 				8EB8F7F01F56B5A700804C7C /* HYTopBottomClosePortalTransitionAnimationDirection.m in Sources */,
@@ -331,12 +330,14 @@
 				8EB8F7AA1F56967300804C7C /* AppDelegate.m in Sources */,
 				8EB8F7F31F56B5A700804C7C /* HYCameraIrisHollowOpenTransitionAnimation.m in Sources */,
 				8EB8F80E1F57978000804C7C /* PushViewController.m in Sources */,
+				8E397AD221F801F600E8CF62 /* HYSystemTransitionAnimation.m in Sources */,
 				8EB8F7F11F56B5A700804C7C /* HYTopBottomOpenPortalTransitionAnimationDirection.m in Sources */,
 				8EB8F7A71F56967300804C7C /* main.m in Sources */,
 				8EB8F7F21F56B5A700804C7C /* HYCameraIrisHollowCloseTransitionAnimation.m in Sources */,
 				8EB8F7FA1F56B5A700804C7C /* HYPushTransitionAnimation.m in Sources */,
 				8EB8F7EF1F56B5A700804C7C /* HYPortalTransitionAnimation.m in Sources */,
 				8EB8F8141F57B03200804C7C /* AnimationListViewController.m in Sources */,
+				8E397AD821F8023E00E8CF62 /* UIViewController+HYTransitionAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D94N38GZR8;
 				INFOPLIST_FILE = HYTransitionAnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ocean.HYTransitionAnimationDemo;
@@ -469,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D94N38GZR8;
 				INFOPLIST_FILE = HYTransitionAnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ocean.HYTransitionAnimationDemo;

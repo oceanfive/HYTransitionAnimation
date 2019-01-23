@@ -10,7 +10,7 @@
 
 @implementation HYTopBottomOpenPortalTransitionAnimationDirection
 
-- (instancetype)init{
+- (instancetype)init {
     self = [super init];
     if (self) {
         self.operation = HYPortalTransitionAnimationOperationOpen;

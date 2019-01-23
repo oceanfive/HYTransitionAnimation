@@ -10,8 +10,9 @@
 
 @implementation HYFlipTransitionAnimation
 
-- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
+- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     [super animateTransition:transitionContext];
+    
     if (self.operation == HYFlipTransitionAnimationOperationForward) {
         [self forwardOperation];
     } else if (self.operation == HYFlipTransitionAnimationOperationBack){
@@ -22,7 +23,7 @@
 }
 
 //前进
-- (void)forwardOperation{
+- (void)forwardOperation {
     switch (self.position) {
         case HYFlipTransitionAnimationPositonLeft:
         case HYFlipTransitionAnimationPositonRight:

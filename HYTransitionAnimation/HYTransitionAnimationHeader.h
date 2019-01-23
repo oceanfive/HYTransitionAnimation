@@ -9,14 +9,14 @@
 #ifndef HYTransitionAnimationHeader_h
 #define HYTransitionAnimationHeader_h
 
-//base
-#import "UIViewController+HYTransitionAnimationCategory.h"
-#import "UINavigationController+HYTransitionAnimationCategory.h"
+// base
+#import "UIViewController+HYTransitionAnimation.m"
+#import "UINavigationController+HYTransitionAnimation.m"
 
-//TransitionAnimation
+// TransitionAnimation
 #import "HYTransitionAnimation.h"
 
-//HYSystemTransitionAnimation
+// HYSystemTransitionAnimation - present/dismiss无效
 #import "HYSystemTransitionAnimation.h"
 #import "HYCameraIrisHollowCloseTransitionAnimation.h"
 #import "HYCameraIrisHollowOpenTransitionAnimation.h"

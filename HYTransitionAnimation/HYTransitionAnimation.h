@@ -13,52 +13,46 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*
  @discussion
- 这个类是转场动画的基类，自定义转场动画需要继承这个类，并在子类中实现方法 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext; 在这个方法中执行具体的动画操作；动画完成完成后执行方法completeTransition:即可
- 
+ 这个类是转场动画的基类，自定义转场动画需要继承这个类，并在子类中实现方法:
+ - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext;
+ 在这个方法中执行具体的动画操作；动画完成完成后执行方法completeTransition:即可
  */
 
 @interface HYTransitionAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
-/**
- 转场动画持续时间
- */
+/** 转场动画持续时间 */
 @property (nonatomic, assign) NSTimeInterval duration;
-
-/**
- 转场动画期间是否隐藏导航栏，默认YES
- */
+/** 转场动画期间是否隐藏导航栏，默认YES */
 @property (nonatomic, assign) BOOL isHiddenNavigationBar;
 
-/**
- 转场动画发生的上下文
- */
+/** 转场动画发生的上下文 */
 @property (nonatomic, assign, readonly) id<UIViewControllerContextTransitioning>transitionContext;
-
-/**
- 转场动画的发生容器
- */
+/** 转场动画的发生容器 */
 @property (nonatomic, strong, readonly) UIView *containerView;
 
-/**
- 转场动画的来源控制器
- */
+#pragma mark - FromVC
+/** 转场动画的来源控制器 */
 @property (nonatomic, strong, readonly) UIViewController *fromVC;
-
-/**
- 转场动画的来源控制器视图
- */
+/** 转场动画的来源控制器视图 */
 @property (nonatomic, strong, readonly) UIView *fromView;
+/** 转场动画的来源控制器视图的 开始的frame */
+@property (nonatomic, assign, readonly) CGRect initialFrameForFromVC;
+/** 转场动画的来源控制器视图的 最终的frame */
+@property (nonatomic, assign, readonly) CGRect finalFrameForFromVC;
 
-/**
- 转场动画的目标控制器
- */
+#pragma mark - ToVC
+/** 转场动画的目标控制器 */
 @property (nonatomic, strong, readonly) UIViewController *toVC;
-
-/**
- 转场动画的目标控制器视图
- */
+/** 转场动画的目标控制器视图 */
 @property (nonatomic, strong, readonly) UIView *toView;
+/** 转场动画的目标控制器视图的 开始的frame */
+@property (nonatomic, assign, readonly) CGRect initialFrameForToVC;
+/** 转场动画的目标控制器视图的 最终的frame */
+@property (nonatomic, assign, readonly) CGRect finalFrameForToVC;
 
+#pragma mark - 子类设置的属性
+/** 反向的 */
+@property (nonatomic, assign) BOOL reversed;
 
 @end
 

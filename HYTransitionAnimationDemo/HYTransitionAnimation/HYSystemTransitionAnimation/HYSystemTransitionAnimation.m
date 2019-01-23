@@ -14,7 +14,7 @@
 
 @implementation HYSystemTransitionAnimation
 
-- (instancetype)init{
+- (instancetype)init {
     self = [super init];
     if (self) {
         self.direction = HYTransitionAnimationDirectionFromLeft;
@@ -22,8 +22,16 @@
     return self;
 }
 
-- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
+- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     [super animateTransition:transitionContext];
+    
+    if (![self.fromVC.view isDescendantOfView:self.containerView]) {
+        [self.containerView addSubview:self.fromVC.view];
+    }
+    if (![self.toVC.view isDescendantOfView:self.containerView]) {
+        [self.containerView addSubview:self.toVC.view];
+    }
+    
     CATransition *anim = [CATransition animation];
     anim.delegate = self;
     anim.duration = [self transitionDuration:transitionContext];
@@ -34,7 +42,7 @@
 
 
 #pragma mark - CAAnimationDelegate
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
     if (flag) {
         if (self.isHiddenNavigationBar) {
             [self.transitionContext completeTransition:![self.transitionContext transitionWasCancelled]];
@@ -44,7 +52,7 @@
 
 
 #pragma mark - private
-- (NSString *)hy_getAnimatonTypeWith:(HYTransitionAnimationType)type{
+- (NSString *)hy_getAnimatonTypeWith:(HYTransitionAnimationType)type {
     switch (type) {
         case HYTransitionAnimationTypeFade: return kCATransitionFade; break;
         case HYTransitionAnimationTypeMoveIn: return kCATransitionMoveIn; break;
@@ -62,7 +70,7 @@
     }
 }
 
-- (NSString *)hy_getDirectionWith:(HYTransitionAnimationDirection)direction{
+- (NSString *)hy_getDirectionWith:(HYTransitionAnimationDirection)direction {
     switch (direction) {
         case HYTransitionAnimationDirectionFromLeft: return kCATransitionFromLeft; break;
         case HYTransitionAnimationDirectionFromRight: return kCATransitionFromRight; break;

@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "UINavigationController+HYTransitionAnimationCategory.h"
-#import "UIViewController+HYTransitionAnimationCategory.h"
 #import "HYTransitionAnimationHeader.h"
 #import "PushViewController.h"
 
@@ -44,8 +42,8 @@
     anim.operation = HYFlipTransitionAnimationOperationForward;
     anim.position = HYFlipTransitionAnimationPositonVerticalCenter;
     anim.duration = 5;
-    [self.navigationController hy_pushViewController:vc animation:anim];
     
+    [self.navigationController hy_pushViewController:anim animated:YES];
     //    NSLayoutAttribute
 }
 

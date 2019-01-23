@@ -61,20 +61,53 @@
 - (void)myButtonClick:(UIButton *)button{
     
     PopViewController *vc = [[PopViewController alloc] init];
+
+    vc.pushAnimation = self.animation;
+    vc.presentAnimation = self.animation;
     
-    HYFlipTransitionAnimation *anim = [[HYFlipTransitionAnimation alloc] init];
-    anim.operation = HYFlipTransitionAnimationOperationForward;
-    anim.position = HYFlipTransitionAnimationPositonRight;
+    HYTransitionAnimation *reversed;
     
-    self.animation = anim;
+    if ([self.animation isKindOfClass:[HYSystemTransitionAnimation class]]) {
+        HYSystemTransitionAnimation *system = (HYSystemTransitionAnimation *)self.animation;
+        
+        HYSystemTransitionAnimation *anim = [[HYSystemTransitionAnimation alloc] init];
+        anim.type = system.type;
+        anim.direction = system.direction == HYTransitionAnimationDirectionFromLeft ? HYTransitionAnimationDirectionFromRight : HYTransitionAnimationDirectionFromLeft;
+        
+        reversed = anim;
+        
+    } else if ([self.animation isKindOfClass:[HYPortalTransitionAnimation class]]) {
+        HYPortalTransitionAnimation *portal = (HYPortalTransitionAnimation *)self.animation;
+        
+        HYPortalTransitionAnimation *anim = [[HYPortalTransitionAnimation alloc] init];
+        anim.operation = portal.operation == HYPortalTransitionAnimationOperationOpen ? HYPortalTransitionAnimationOperationClose : HYPortalTransitionAnimationOperationOpen;
+        anim.direction = portal.direction;
+        anim.scale = portal.scale;
+        
+        reversed = anim;
+        
+        
+    }
+    
+    vc.popAnimation = reversed;
+    vc.dismissAnimation = reversed;
+    
+    
+//    HYFlipTransitionAnimation *anim = [[HYFlipTransitionAnimation alloc] init];
+//    anim.operation = HYFlipTransitionAnimationOperationForward;
+//    anim.position = HYFlipTransitionAnimationPositonRight;
+//
+//    vc.pushAnimation = anim;
+//    vc.presentAnimation = anim;
     
     if (button.tag == kPushButtonTag) {
         
-        [self.navigationController hy_pushViewController:vc animation:self.animation];
+        [self.navigationController hy_pushViewController:vc animated:YES];
+
         
     } else {
         
-        [self hy_presentViewController:vc animation:self.animation];
+        [self hy_presentViewController:vc animated:YES completion:NULL];
 
     }
     
@@ -83,7 +116,7 @@
 }
 
 #pragma mark - 选择动画类型
-- (void)chooseAnimation{
+- (void)chooseAnimation {
     AnimationListViewController *vc = [[AnimationListViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
