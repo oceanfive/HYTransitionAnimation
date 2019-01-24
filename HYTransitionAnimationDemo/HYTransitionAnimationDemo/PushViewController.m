@@ -92,6 +92,10 @@
     vc.popAnimation = reversed;
     vc.dismissAnimation = reversed;
     
+    UIPercentDrivenInteractiveTransition *dismissInteractiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
+    vc.dismissInteractiveTransition = dismissInteractiveTransition;
+    vc.popInteractiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
+    
     
 //    HYFlipTransitionAnimation *anim = [[HYFlipTransitionAnimation alloc] init];
 //    anim.operation = HYFlipTransitionAnimationOperationForward;
@@ -102,11 +106,12 @@
     
     if (button.tag == kPushButtonTag) {
         
+        vc.pushed = YES;
         [self.navigationController hy_pushViewController:vc animated:YES];
 
-        
     } else {
         
+        vc.pushed = NO;
         [self hy_presentViewController:vc animated:YES completion:NULL];
 
     }

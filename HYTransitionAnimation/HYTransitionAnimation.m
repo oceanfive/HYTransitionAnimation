@@ -30,7 +30,10 @@
 }
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
+#ifdef DEBUG
     NSLog(@"%s", __FUNCTION__);
+    NSLog(@"%f", self.duration);
+#endif
     return self.duration;
 }
 
@@ -62,7 +65,9 @@
 //        [_containerView addSubview:_toVC.view];
 //    }
     
+#ifdef DEBUG
     [self _logAllPropertiesValue];
+#endif
 }
 
 // 转场结束 - completeTransition:方法触发
@@ -94,7 +99,6 @@
     NSLog(@"fromView: %@", _fromView);
     NSLog(@"toView: %@", _toView);
     
- 
     NSLog(@"initialFrameFromVC: %@", NSStringFromCGRect(_initialFrameForFromVC));
     NSLog(@"finalFrameFromVC: %@", NSStringFromCGRect(_finalFrameForFromVC));
   

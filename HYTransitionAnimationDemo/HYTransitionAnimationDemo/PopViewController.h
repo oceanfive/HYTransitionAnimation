@@ -10,4 +10,6 @@
 
 @interface PopViewController : UIViewController
 
+@property (nonatomic, assign) BOOL pushed;
+
 @end

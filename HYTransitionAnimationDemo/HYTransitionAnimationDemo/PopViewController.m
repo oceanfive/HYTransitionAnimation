@@ -15,6 +15,8 @@
 
 @interface PopViewController ()
 
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *percentDrivenInteractiveTransition;
+
 @end
 
 @implementation PopViewController
@@ -46,6 +48,11 @@
     [self.view addSubview:myButton2];
     myButton2.tag = kDismissButtonTag;
     myButton2.frame = CGRectMake(200, 400, 100, 80);
+    
+    
+    UIScreenEdgePanGestureRecognizer *gesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleScreenEdgePanGestureRecognizer:)];
+    gesture.edges = UIRectEdgeLeft;
+    [self.view addGestureRecognizer:gesture];
 }
 
 - (void)myButtonClick:(UIButton *)button{
@@ -56,10 +63,13 @@
     
     if (button.tag == kPopButtonTag) {
         
+        self.popInteractiveTransition = nil;
+        
         [self.navigationController hy_popViewControllerAnimated:YES];
         
     } else {
-        
+        // 不需要交互式转场动画
+        self.dismissInteractiveTransition = nil;
         [self hy_dismissViewControllerAnimated:YES completion:NULL];
 //        [self dismissViewControllerAnimated:YES completion:nil];
     }
@@ -67,19 +77,88 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)handleScreenEdgePanGestureRecognizer:(UIScreenEdgePanGestureRecognizer *)gesture {
+//    CGFloat progress = [gesture translationInView:self.view].x / self.view.bounds.size.width;
+    CGFloat progress = [gesture translationInView:self.view].x / self.view.bounds.size.width;
+    
+    // 把这个百分比限制在0~1之间
+    progress = MIN(1.0, MAX(0.0, progress));
+    NSLog(@"progress: %f", progress);
+    
+    switch (gesture.state) {
+        case UIGestureRecognizerStateBegan:
+            {
+//                [self.navigationController popViewControllerAnimated:YES];
+                NSLog(@"UIGestureRecognizerStateBegan =====");
+
+                if (self.pushed) {
+                    // 置空
+                    self.popInteractiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
+                    
+                    [self.navigationController hy_popViewControllerAnimated:YES];
+                } else {
+                    UIPercentDrivenInteractiveTransition *transition = [[UIPercentDrivenInteractiveTransition alloc] init];
+                    self.dismissInteractiveTransition = transition;
+                    
+                    [self hy_dismissViewControllerAnimated:YES completion:NULL];
+                }
+            }
+            break;
+            
+        case UIGestureRecognizerStateChanged:
+        {
+            NSLog(@"UIGestureRecognizerStateChanged =====");
+            
+            if (self.pushed) {
+                [self.popInteractiveTransition updateInteractiveTransition:progress];
+            } else {
+                [self.dismissInteractiveTransition updateInteractiveTransition:progress];
+            }
+        }
+            break;
+            
+        case UIGestureRecognizerStateEnded:
+        {
+            NSLog(@"UIGestureRecognizerStateEnded =====");
+            
+            if (progress > 0.5) {
+                if (self.pushed) {
+                    [self.popInteractiveTransition finishInteractiveTransition];
+                } else {
+                    [self.dismissInteractiveTransition finishInteractiveTransition];
+                }
+            } else {
+                if (self.pushed) {
+                    [self.popInteractiveTransition cancelInteractiveTransition];
+                } else {
+                    [self.dismissInteractiveTransition cancelInteractiveTransition];
+                }
+            }
+        }
+            break;
+            
+        case UIGestureRecognizerStateCancelled:
+        {
+            NSLog(@"UIGestureRecognizerStateCancelled =====");
+            
+            if (self.pushed) {
+                [self.popInteractiveTransition cancelInteractiveTransition];
+            } else {
+                [self.dismissInteractiveTransition cancelInteractiveTransition];
+            }
+        }
+            break;
+            
+        default:
+        {
+            NSLog(@"default =====");
+        }
+            
+            break;
+    }
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

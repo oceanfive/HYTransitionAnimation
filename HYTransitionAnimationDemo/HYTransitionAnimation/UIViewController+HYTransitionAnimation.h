@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (HYTransitionAnimation)<UIViewControllerTransitioningDelegate>
 
-#pragma mark - 转场动画
+#pragma mark - TransitionAnimation
 /** push动画 */
 @property (nonatomic, strong) HYTransitionAnimation *pushAnimation;
 /** pop动画 */
@@ -23,6 +23,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) HYTransitionAnimation *presentAnimation;
 /** dismiss动画 */
 @property (nonatomic, strong) HYTransitionAnimation *dismissAnimation;
+
+#pragma mark - InteractiveTransition (注意：不需要的时候设置为nil)
+/** present 交互式转场 */
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *presentInteractiveTransition;
+/** dismiss 交互式转场 */
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition * dismissInteractiveTransition;
+/** push 交互式转场 */
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *pushInteractiveTransition;
+/** pop 交互式转场 */
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition * popInteractiveTransition;
 
 #pragma mark - present/dismiss 转场
 /**
@@ -37,14 +47,13 @@ NS_ASSUME_NONNULL_BEGIN
                       completion:(void (^ __nullable)(void))completion;
 
 /**
- dismiss
+ dismiss，不需要交互式转场动画
 
  @param flag 动画flag
  @param completion 完成回调
  */
 - (void)hy_dismissViewControllerAnimated:(BOOL)flag
                               completion:(void (^ __nullable)(void))completion;
-
 
 @end
 
